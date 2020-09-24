@@ -1,0 +1,340 @@
+main {
+  .seccion-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    h1 {
+      .world {
+        text-decoration: line-through;
+      }
+    }
+    .portal {
+      p {
+        font-size: 0.88rem;
+        line-height: 1.5rem;
+        margin-left: 0.3rem;
+        text-align: justify;
+        .port {
+          display: none;
+        }
+      }
+    }
+    .boton-1 {
+      margin-top: 1.9rem;
+      button:hover {
+        background-image: linear-gradient(
+          90deg,
+          $color-boton 10%,
+          $color-boton-1 100%
+        );
+      }
+    }
+  }
+  .seccion-2 {
+    margin-top: 5rem;
+    height: 120rem;
+    .box-1 {
+      transform: skew(0, -3deg);
+      background-image: linear-gradient(
+        90deg,
+        $color-box 31.3%,
+        $color-box-1 100.2%
+      );
+      width: 100%;
+      height: 75.22rem;
+      .box-episodios {
+        transform: skew(0, 3deg);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .principal {
+          .titulo-box {
+            color: $color-blanco;
+            margin: 1.5rem;
+            padding-top: 3rem;
+          }
+          .episodios {
+            margin-top: 1rem;
+            display: grid;
+            grid-template-rows: repeat(4, 14rem);
+            justify-content: center;
+            align-items: center;
+            grid-row-gap: 0.3rem;
+            .spotify {
+              width: 18.62rem;
+              border: none;
+            }
+          }
+        }
+      }
+      .box-celular {
+        .celular {
+          transform: skew(0, 3deg);
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+          .img-cel {
+            margin-top: 3rem;
+            width: 20rem;
+            justify-content: center;
+          }
+          .box-cel {
+            display: flex;
+            flex-direction: column;
+            .titulo-1 {
+              margin-left: 1.6rem;
+            }
+            .parrafo-1 {
+              padding-left: 1.8rem;
+              max-width: 95%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .seccion-3 {
+    margin-top: 3rem;
+    .invitadas {
+      .titulo-3 {
+        margin-left: 1.6rem;
+      }
+      .fotos {
+        margin-top: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        .img-inv {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .seccion-4 {
+    display: flex;
+    flex-direction: column;
+    .titulo-4 {
+      margin-top: 2.5rem;
+      margin-left: 1.6rem;
+    }
+    .temas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .iconos {
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem;
+        p {
+          font-weight: bold;
+          font-size: 1.8rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .seccion-5 {
+    margin-top: 8rem;
+    height: 23rem;
+    .box-2 {
+      transform: skew(0, -3deg);
+      background-image: linear-gradient(
+        90deg,
+        $color-box 31.3%,
+        $color-box-1 100.2%
+      );
+      width: 100%;
+      height: 25rem;
+      position: absolute;
+      .novedades {
+        transform: skew(0, 3deg);
+        text-align: center;
+
+        .titulo-5 {
+          margin-top: 6rem;
+          margin-left: 1.6rem;
+          color: $color-blanco;
+        }
+        .boton-2 {
+          margin-top: 1.9rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 680px) {
+  main {
+    margin-top: 8rem;
+    .seccion-1 {
+      align-items: flex-start;
+      margin-left: 10rem;
+      h1 {
+        font-size: 4rem;
+        .blue {
+          color: $color-box;
+        }
+      }
+      .portal {
+        p {
+          font-size: 1.3rem;
+          line-height: 1.8rem;
+          max-width: 39.25rem;
+          .port {
+            display: contents;
+          }
+          .un {
+            display: none;
+          }
+        }
+      }
+    }
+    .seccion-2 {
+      height: 137rem;
+      .box-1 {
+        height: 78rem;
+        .box-episodios {
+          .principal {
+            .titulo-box {
+              margin-left: 11.2rem;
+              font-size: 3rem;
+            }
+            .episodios {
+              .spotify {
+                margin-top: 0.7rem;
+                width: 36.5rem;
+              }
+            }
+          }
+        }
+        .box-celular {
+          .celular {
+            .img-cel {
+              width: 28.6rem;
+            }
+            .box-cel {
+              margin-top: 6rem;
+              .titulo-1 {
+                font-size: 3.1rem;
+                text-align: center;
+              }
+              .parrafo-1 {
+                margin-top: 1rem;
+                font-size: 1.25rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .seccion-3 {
+      .invitadas {
+        .titulo-3 {
+          font-size: 3rem;
+          margin-left: 11.2rem;
+        }
+      }
+    }
+    .seccion-4 {
+      .titulo-4 {
+        font-size: 3rem;
+        margin-left: 11.2rem;
+      }
+      .temas {
+        margin-top: 2rem;
+        flex-direction: row;
+      }
+    }
+    .seccion-5 {
+      height: 21rem;
+      .box-2 {
+        .novedades {
+          margin-top: 6rem;
+          .titulo-5 {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  main {
+    .seccion-2 {
+      height: 100rem;
+      .box-1 {
+        height: 57rem;
+        .box-episodios {
+          .principal {
+            .titulo-box {
+              margin-left: 11.2rem;
+              font-size: 3rem;
+            }
+            .episodios {
+              display: grid;
+              grid-template-columns: repeat(2, minmax(auto, 36.5rem));
+              grid-template-rows: repeat(2, minmax(auto, 14.75rem));
+              grid-gap: 4rem;
+              justify-content: center;
+            }
+          }
+        }
+        .box-celular {
+          margin-top: 3.5rem;
+          .celular {
+            flex-direction: row;
+            justify-content: center;
+            margin-right: 15rem;
+            .box-cel {
+              display: flex;
+              flex-direction: column;
+              margin-top: 6rem;
+              .titulo-1 {
+                margin-left: 1.5rem;
+                font-size: 3.2rem;
+              }
+              .parrafo-1 {
+                margin-top: 1rem;
+                font-size: 1.25rem;
+                max-width: 26.25rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .seccion-3 {
+      .invitadas {
+        margin-bottom: 3rem;
+        .titulo-3 {
+          margin-left: 10rem;
+        }
+        .fotos {
+          margin-top: 1rem;
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
+    .seccion-4 {
+      .temas {
+        margin-top: 4rem;
+        .iconos {
+          margin-left: 10rem;
+        }
+      }
+    }
+    .seccion-5 {
+      height: 30rem;
+      .box-2 {
+        margin-top: 4rem;
+        height: 30rem;
+        .novedades {
+          .titulo-5 {
+            margin-top: 7rem;
+          }
+        }
+      }
+    }
+  }
+}

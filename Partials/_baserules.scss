@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+h1 {
+  font-size: 2.62rem;
+}
+h2 {
+  font-size: 2.25rem;  
+}
+button {
+  padding: 0.9rem;
+  width: 18.8rem;
+  background-color: $color-boton;
+  border: none;
+  font-weight: bolder;
+  font-size: 1rem;
+}
